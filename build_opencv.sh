@@ -1,13 +1,11 @@
 git clone https://github.com/Itseez/opencv.git
 git clone https://github.com/Itseez/opencv_contrib.git
 
-# checkout 3.1.0
 cd /opencv
 git checkout 3.1.0
 cd /opencv_contrib
 git checkout 3.1.0
 
-# build via cmake
 mkdir /opencv/build
 cd /opencv/build
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
