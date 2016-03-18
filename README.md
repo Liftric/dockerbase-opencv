@@ -7,6 +7,7 @@ Dockerfile for building an image for opencv.
 ```bash
 curl -fsSLO https://raw.githubusercontent.com/benjohnde/dockerbase-opencv/master/Dockerfile
 docker build -t dockerbase-opencv .
+docker run -it dockerbase-opencv bash
 ```
 
 

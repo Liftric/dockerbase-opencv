@@ -13,6 +13,10 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
   -D OPENCV_EXTRA_MODULES_PATH=/opencv_contrib/modules \
   -D BUILD_opencv_java=OFF  -D BUILD_opencv_python=OFF \
   -D BUILD_EXAMPLES=OFF ..
-make
+
+make -j`nproc`
 make install
 ldconfig
+
+rm -rf /opencv
+rm -rf /opencv_contrib
