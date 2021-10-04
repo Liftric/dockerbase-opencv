@@ -76,3 +76,6 @@ cmake \
 make -j`nproc`
 make install
 ldconfig
+
+rm -rf /opencv
+rm -rf /opencv_contrib

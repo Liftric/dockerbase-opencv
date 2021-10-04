@@ -11,3 +11,4 @@ RUN apt install -y -q libopenexr-dev libv4l-dev libatlas-base-dev
 
 COPY build_opencv.sh /
 RUN ["./build_opencv.sh"]
+RUN ["rm -rf /build_opencv.sh"]
